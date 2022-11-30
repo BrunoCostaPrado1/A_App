@@ -1,5 +1,6 @@
 // @filename: server.ts
 import { initTRPC } from "@trpc/server";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { z } from "zod";
 const t = initTRPC.create();
 interface User {
@@ -9,7 +10,7 @@ interface User {
 const userList: User[] = [
   {
     id: "1",
-    name: "KATT",
+    name: "Bruno",
   },
 ];
 const appRouter = t.router({

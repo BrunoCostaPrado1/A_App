@@ -1,17 +1,18 @@
 {
-  "name": "my-webpack-project",
+  "name": "back-end",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "author": "Bruno Costa Prado",
   "scripts": {
-    "build": "webpack --mode=production --define-process-env-node-env=production",
+    "build": "webpack ",
     "dev": "tsx watch src/index.ts",
-    "build:prod": "webpack --mode=production --define-process-env-node-env=production",
     "watch": "webpack --watch",
-    "serve": "webpack serve"
+    "serve": "webpack serve",
+    "lint": "eslint ./src --ext .ts"
   },
   "devDependencies": {
+    "@types/node": "^18.11.10",
     "@types/webpack": "^5.28.0",
     "@types/webpack-dev-server": "^4.7.2",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
@@ -37,7 +38,6 @@
     "@trpc/next": "^10.4.2",
     "@trpc/react-query": "^10.4.2",
     "@trpc/server": "^10.4.2",
-    "@types/node": "^18.11.9",
     "zod": "^3.19.1"
   }
 }
