@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ESNext",
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "noImplicitAny": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "declaration": true,
+    "typeRoots": ["node_modules/@types"],
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*"],
+  "forceConsistentCasingInFileNames": true,
+  "noFallthroughCasesInSwitch": true,
+  "isolatedModules": false,
+  "strict": true,
+  "useUnknownInCatchVariables": false,
+  "inlineSourceMap": true
+}
